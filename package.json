@@ -1,4 +1,8 @@
 {
     "name": "fluff",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "dependencies": {
+        "express": "^4.17.1",
+        "mongodb": "5.6"
+    }
 }
