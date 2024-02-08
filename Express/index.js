@@ -13,3 +13,10 @@ app.get("/product/:id", function(req, res) {
       res.send(product);
     }
   });
+app.get("/", function(req, res) {
+    
+});
+
+  const port = 3001;
+  console.log("server starting on port: " + port );
+  app.listen(port);
