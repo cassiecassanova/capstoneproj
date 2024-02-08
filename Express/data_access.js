@@ -2,8 +2,8 @@
 const {MongoClient} = require('mongodb');
 var url = "mongodb://127.0.0.1:27017/";
 const client = new MongoClient(url);
-const dbName = 'fluff';
-const collectionName = "fluff";
+const dbName = 'pet_store';
+const collectionName = "products";
 
 module.exports.call = async function call(operation, parameters, callback) {
     await client.connect();

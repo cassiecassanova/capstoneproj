@@ -29,5 +29,5 @@ def generate_product(id_value):
 with open('product_data.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerow(['id', 'name', 'price', 'description', 'animal_category', 'popularity'])
-    for n in range(1, 11):
+    for n in range(1, 1001):
         writer.writerow(generate_product(n))
