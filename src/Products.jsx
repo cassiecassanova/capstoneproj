@@ -1,14 +1,21 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import catToy from "./assets/cat-toy.png";
 import catTreats from "./assets/cat-treats.png";
 import dogCollar from "./assets/dog-collar.png";
 import "./Products.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+
 function Products() {
+  const [data, setData] = useState({})
   const [purchase, setPurchase] = useState(0);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/products").then(res => res.json()).then(data => setData(data))
+  }, [])
   return (
     <>
+      <div>{console.log(data)}</div>
       <div className="card-product-container">
         <div className="card" style={{ width: "18rem" }}>
           <img src={catToy} className="card-product-img" />
