@@ -1,0 +1,11 @@
+id,name,price,description,animal_category,popularity
+1,Dog Bone,56.99,This product is pretty good at what its supposed to do.,Dog,0.9
+2,Dog Bone,75.99,This product is pretty good at what its supposed to do.,Dog,1.0
+3,Dog Collar,81.99,This product is the best.,Dog,0.5
+4,Dog Bed,67.99,This product is wonderful!,Dog,1.0
+5,Dog Bed,11.99,This product is the best.,Dog,0.9
+6,Dog Bone,98.99,This product is the best.,Dog,0.6
+7,Dog Bed,24.99,This product is pretty good at what its supposed to do.,Dog,0.2
+8,Dog Brush,76.99,This product is the best.,Dog,0.2
+9,Cat Treats,75.99,This product is the best.,Cat,0.3
+10,Dog Collar,48.99,This product is the best.,Dog,0.1
