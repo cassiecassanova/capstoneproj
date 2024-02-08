@@ -14,8 +14,14 @@ module.exports.call = async function call(operation, parameters, callback) {
         case "findAllProducts":
             const products = await collection.find({}).toArray();
             console.log('hello')
-            console.log(products)
             callback({ products });
+            break;
+        case "findProduct":
+            const product = await collection.findOne({
+                id: parameters.id
+            })
+            console.log(parameters)
+            callback({product})
             break;
     }
   console.log("call complete: " + operation);
