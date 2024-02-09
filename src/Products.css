@@ -1,7 +1,3 @@
-.card-product-container {
-  display: inline-block;
-}
-
 .card {
   padding: 20px;
   margin: 20px;
@@ -19,4 +15,9 @@
   display: inline-block;
   width: 18rem;
   margin: 20px;
+  padding:0;
+}
+
+.card-product-cart-button{ 
+  padding-right: 20px;
 }
