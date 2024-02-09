@@ -6,7 +6,17 @@ import "./Products.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Products() {
-  const [purchase, setPurchase] = useState(0);
+//create hooks to populate the cartItems list on the cart page
+  const [purchase, setPurchase] = useState();
+  const addedtoCartMsg = (
+    <div>
+      <h1>
+        Item has been added to <a href="cart">Cart</a>!
+      </h1>
+    </div>
+  );
+  const addToCart = () => {};
+  //need to auto-populate the cards with the product list
   return (
     <>
       <div className="card-product-container">
