@@ -1,4 +1,3 @@
-import React from "react";
 import Img1 from "./assets/carousel-img1.jpg";
 import Img2 from "./assets/carousel-img2.jpg";
 import Img3 from "./assets/carousel-img3.jpg";
@@ -44,12 +43,11 @@ function Home() {
           desire for your furry, feathery, or scaly companion.
         </p>
         <p className="homepage-desc">
-          Peruse our fine selection of pet oriented products on our
-          <a href="Products">Products</a> page!
+          Peruse our fine selection of pet oriented products on our <a href="Products">Products</a> page!
         </p>
         <p className="homepage-desc">
-          Don't forget to checkout your <a href="Cart">Cart</a> at the end of
-          your visit.
+          {`Don't forget to checkout your <a href="Cart">Cart</a> at the end of
+          your visit.`}
         </p>
       </div>
     </div>

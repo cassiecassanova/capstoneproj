@@ -1,7 +1,4 @@
 import { useState, useEffect } from "react";
-import catToy from "./assets/cat-toy.png";
-import catTreats from "./assets/cat-treats.png";
-import dogCollar from "./assets/dog-collar.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Modal } from "./Modal";
 import {ShowProducts} from "./ShowProducts.jsx"
@@ -12,8 +9,6 @@ function Products() {
   const [firstTen, setFirstTen] = useState([])
   const [isProductsShowVisible, setIsProductsShowVisible] = useState(false);
   const [currentProduct, setCurrentProduct] = useState({});
-  let imageArray = [catToy, catTreats, dogCollar];
-
 
   useEffect(() => {
     fetch("http://localhost:3001/products")
