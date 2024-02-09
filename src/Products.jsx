@@ -59,20 +59,18 @@ function Products() {
   return (
     <>
       {firstTen.map((product) => (
-        <div key={product.id}>
-            <div className="card-product-container">
-            <div className="card" style={{ width: "18rem" }}>
+        <div key={product.id} className='container'>
+            <div className="card" >
               <img src={catToy} className="card-product-img" />
               <div className="card-body">
                 <h5 className="card-product-title">{product.name}</h5>
-                <p className="card-product-price">{product.price}</p>
-                <p className="card-product-description">{product.description}</p>
+                <p className="card-product-price">$ {product.price}</p>
+                <p className="card-product-description">Reviews: {product.description}</p>
                 <p className="card-product-category">Category: {product.animal_category}</p>
                 <a href="cart" className="card-product-cart-button">
                   Add to Cart
                 </a>
               </div>
-            </div>
             </div>
         </div>
       ))}

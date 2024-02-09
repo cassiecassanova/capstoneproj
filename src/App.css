@@ -1,14 +1,22 @@
 body {
   background-color: #fef5da;
+  text-align:center;
+  display:inline;
 }
 
 .site-logo {
-  align-items: center;
+  /* align-items: center; */
   width: 20%;
   height: 20%;
 }
 
 .site-header {
-  align-items: center;
+  /* align-items: center; */
   color: orange;
 }
+
+ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+  }

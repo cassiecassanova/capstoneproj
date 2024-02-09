@@ -1,4 +1,4 @@
-import { Route, Routes, Navigate, Link } from "react-router-dom";
+import { Route, Routes, Navigate} from "react-router-dom";
 import NavigationBar from "./components/Navigation-bar";
 import Home from "./Home";
 import Products from "./Products";
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <img className="site-logo" src={Logo}></img>
-      <h1 className="site-header">Fluff n Stuff</h1>
+      <h1 className="site-header">{`Fluff n' Stuff`}</h1>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
