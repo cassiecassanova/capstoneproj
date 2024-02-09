@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <img className="site-logo" src={Logo}></img>
-      <h1 className="site-header">Fluff n' Stuff</h1>
+      <h1 className="site-header">Fluff n Stuff</h1>
       <NavigationBar />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
