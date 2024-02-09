@@ -1,12 +1,22 @@
+
 .card-product-container {
-  display: inline-flex;
+  display: inline-block;
 }
 
 .card {
   padding: 20px;
   margin: 20px;
+  display: inline-block;
+  width: 18rem;
+  height: 22rem;
 }
 
 .card-product-img {
-  height: 200px;
+  height: 100px;
+}
+
+.container {
+  display: inline-block;
+  width: 18rem;
+  margin: 20px;
 }

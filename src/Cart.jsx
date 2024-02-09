@@ -1,14 +1,16 @@
 import React, { useEffect } from "react";
 import "./Cart.css";
 
-function Cart() {
-  const cartItems = [];
+function Cart(props) {
   return (
-    <>
-      <p>
-        Looking for more? Check out the <a href="Products">Products</a> page!
-      </p>
-    </>
+    <div>
+      <div className="cart-container"></div>
+      <div className="product-shoutout-container">
+        <p className="product-shoutout">
+          Looking for more? Check out the <a href="Products">Products</a> page!
+        </p>
+      </div>
+    </div>
   );
 }
 
