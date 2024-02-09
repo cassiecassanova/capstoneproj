@@ -2,16 +2,15 @@
   padding: 20px;
   margin: 20px;
   display: inline-block;
-  width:18rem;
+  width: 18rem;
   height: 22rem;
-
 }
 
 .card-product-img {
   height: 100px;
 }
 
-.container{
+.container {
   display: inline-block;
   width: 18rem;
   margin: 20px;

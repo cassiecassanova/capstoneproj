@@ -1,0 +1,1 @@
+mongoimport --db pet_store --collection products --type=csv --headerline --file=C:\Users\wasadmin\fluff_n_stuff\product_data.csv

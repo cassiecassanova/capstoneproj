@@ -1,1 +1,16 @@
+.homepage-header {
+  color: orange;
+}
 
+.carousel-container {
+  padding: 30px;
+}
+
+.carousel-img {
+  width: 450px;
+  height: 300px;
+}
+
+.homepage-desc {
+  font-size: large;
+}

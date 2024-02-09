@@ -12,9 +12,11 @@ function Products() {
   const [firstTen, setFirstTen] = useState([])
   const [isProductsShowVisible, setIsProductsShowVisible] = useState(false);
   const [currentProduct, setCurrentProduct] = useState({});
+  let imageArray = [catToy, catTreats, dogCollar];
+
 
   useEffect(() => {
-    fetch('http://localhost:3001/products')
+    fetch("http://localhost:3001/products")
       .then((res) => {
         return res.json();
       })
@@ -22,7 +24,6 @@ function Products() {
         console.log(res);
         const first_10 = res.products.slice(0,10);
         setFirstTen(first_10)
-        // setData(res);
       });
   }, []);
 
@@ -40,13 +41,12 @@ function Products() {
 
   return (
     <>
-    <SearchBar products={firstTen} onShowProduct={handleShowProduct}/>
-    <Modal show={isProductsShowVisible} onClose={handleClose}>
-      <ShowProducts product={currentProduct}/>
-    </Modal>
+      <SearchBar products={firstTen} onShowProduct={handleShowProduct}/>
+      <Modal show={isProductsShowVisible} onClose={handleClose}>
+        <ShowProducts product={currentProduct}/>
+      </Modal>
     </>
   );
 }
-
 
 export default Products;
