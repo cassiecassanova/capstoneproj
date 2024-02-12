@@ -70,15 +70,14 @@ function Products(props) {
               <p className="card-product-category">
                 Category: {product.animal_category}
               </p>
-              <a
-                href="cart"
+              <button
                 className="card-product-cart-button"
                 onClick={(event) => {
                   props.setPurchases([...props.purchases, product]);
                 }}
               >
                 Add to Cart
-              </a>
+              </button>
             </div>
           </div>
         </div>
